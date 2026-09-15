@@ -1,0 +1,34 @@
+{
+  "id": "fazenda",
+  "title": "A Fazenda",
+  "subtitle": "Agora sobram quadros vazios. Os números dizem quantas peças cada coluna recebe.",
+  "counts": "cols",
+  "rows": [
+    { "id": "vaca", "label": "Vaca", "icon": "🐄" },
+    { "id": "galinha", "label": "Galinha", "icon": "🐔" },
+    { "id": "abelha", "label": "Abelha", "icon": "🐝" }
+  ],
+  "cols": [
+    { "id": "cafe", "label": "Café da manhã", "icon": "☕" },
+    { "id": "fazendeiro", "label": "Fazendeiro", "icon": "🧑‍🌾" },
+    { "id": "feira", "label": "Feira", "icon": "🧺" }
+  ],
+  "clues": [
+    { "id": "leite", "label": "Leite", "icon": "🥛", "candidates": ["vaca+cafe", "vaca+feira", "vaca+fazendeiro"] },
+    { "id": "ovos", "label": "Ovos", "icon": "🥚", "candidates": ["galinha+cafe", "galinha+feira", "galinha+fazendeiro"] },
+    { "id": "mel", "label": "Mel", "icon": "🍯", "candidates": ["abelha+cafe", "abelha+feira"] },
+    { "id": "ferroada", "label": "Ferroada", "icon": "🤕", "candidates": ["abelha+fazendeiro"] },
+    { "id": "ninho", "label": "Ninho", "icon": "🪺", "candidates": ["galinha+fazendeiro"] },
+    { "id": "chocalho", "label": "Chocalho", "icon": "🔔", "candidates": ["vaca+fazendeiro", "vaca+feira"] },
+    { "id": "cera", "label": "Vela de cera", "icon": "🕯️", "candidates": ["abelha+feira", "abelha+fazendeiro"] }
+  ],
+  "solution": {
+    "leite": "vaca+cafe",
+    "ovos": "galinha+cafe",
+    "mel": "abelha+cafe",
+    "ferroada": "abelha+fazendeiro",
+    "ninho": "galinha+fazendeiro",
+    "chocalho": "vaca+feira",
+    "cera": "abelha+feira"
+  }
+}

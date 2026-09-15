@@ -1,0 +1,39 @@
+{
+  "id": "era-uma-vez",
+  "title": "Era uma Vez",
+  "subtitle": "Linhas e colunas têm contagem. Às vezes é o número que decide.",
+  "counts": "both",
+  "rows": [
+    { "id": "lobo", "label": "Lobo", "icon": "🐺" },
+    { "id": "princesa", "label": "Princesa", "icon": "👸" },
+    { "id": "bruxa", "label": "Bruxa", "icon": "🧙‍♀️" }
+  ],
+  "cols": [
+    { "id": "floresta", "label": "Floresta", "icon": "🌲" },
+    { "id": "castelo", "label": "Castelo", "icon": "🏰" },
+    { "id": "maca", "label": "Maçã", "icon": "🍎" },
+    { "id": "lua", "label": "Lua cheia", "icon": "🌕" }
+  ],
+  "clues": [
+    { "id": "uivo", "label": "Uivo", "icon": "📣", "candidates": ["lobo+lua", "lobo+floresta"] },
+    { "id": "cacador", "label": "Caçador", "icon": "🏹", "candidates": ["lobo+floresta", "princesa+floresta"] },
+    { "id": "espelho", "label": "Espelho mágico", "icon": "🪞", "candidates": ["bruxa+castelo", "princesa+castelo"] },
+    { "id": "veneno", "label": "Veneno", "icon": "🧪", "candidates": ["bruxa+maca", "princesa+maca"] },
+    { "id": "sono", "label": "Sono eterno", "icon": "😴", "candidates": ["princesa+maca", "princesa+castelo"] },
+    { "id": "vassoura", "label": "Vassoura", "icon": "🧹", "candidates": ["bruxa+lua", "bruxa+floresta"] },
+    { "id": "doces", "label": "Casa de doces", "icon": "🍭", "candidates": ["bruxa+floresta"] },
+    { "id": "meia-noite", "label": "Meia-noite", "icon": "🕛", "candidates": ["princesa+lua", "bruxa+lua", "princesa+castelo"] },
+    { "id": "lobisomem", "label": "Lobisomem", "icon": "🌒", "candidates": ["lobo+lua"] }
+  ],
+  "solution": {
+    "uivo": "lobo+floresta",
+    "cacador": "princesa+floresta",
+    "espelho": "princesa+castelo",
+    "veneno": "bruxa+maca",
+    "sono": "princesa+maca",
+    "vassoura": "bruxa+lua",
+    "doces": "bruxa+floresta",
+    "meia-noite": "princesa+lua",
+    "lobisomem": "lobo+lua"
+  }
+}

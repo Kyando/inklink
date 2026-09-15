@@ -1,0 +1,44 @@
+{
+  "id": "museu",
+  "title": "Uma Noite no Museu",
+  "subtitle": "Quando tudo parece possível, suponha — e veja o que quebra.",
+  "counts": "both",
+  "rows": [
+    { "id": "detetive", "label": "Detetive", "icon": "🕵️" },
+    { "id": "pintor", "label": "Pintor", "icon": "🧑‍🎨" },
+    { "id": "dinossauro", "label": "Dinossauro", "icon": "🦖" },
+    { "id": "farao", "label": "Faraó", "icon": "👑" }
+  ],
+  "cols": [
+    { "id": "museu", "label": "Museu", "icon": "🏛️" },
+    { "id": "noite", "label": "Noite", "icon": "🌙" },
+    { "id": "ouro", "label": "Ouro", "icon": "🪙" },
+    { "id": "deserto", "label": "Deserto", "icon": "🏜️" }
+  ],
+  "clues": [
+    { "id": "mumia", "label": "Múmia", "icon": "🧻", "candidates": ["farao+museu", "farao+deserto", "farao+noite"] },
+    { "id": "moldura", "label": "Moldura", "icon": "🖼️", "candidates": ["pintor+museu", "pintor+ouro"] },
+    { "id": "estrelas", "label": "Céu estrelado", "icon": "✨", "candidates": ["pintor+noite", "dinossauro+noite", "farao+noite"] },
+    { "id": "pegadas", "label": "Pegadas", "icon": "👣", "candidates": ["detetive+deserto", "dinossauro+deserto", "dinossauro+museu"] },
+    { "id": "roubo", "label": "Roubo", "icon": "💎", "candidates": ["detetive+museu", "detetive+ouro", "farao+ouro"] },
+    { "id": "lanterna", "label": "Lanterna", "icon": "🔦", "candidates": ["detetive+noite", "pintor+noite", "detetive+museu"] },
+    { "id": "meteoro", "label": "Meteoro", "icon": "☄️", "candidates": ["dinossauro+noite", "dinossauro+deserto"] },
+    { "id": "ambar", "label": "Âmbar", "icon": "🟠", "candidates": ["dinossauro+ouro", "dinossauro+museu", "pintor+ouro"] },
+    { "id": "escaravelho", "label": "Escaravelho", "icon": "🪲", "candidates": ["farao+deserto", "farao+ouro", "dinossauro+deserto"] },
+    { "id": "miragem", "label": "Miragem", "icon": "🌫️", "candidates": ["pintor+deserto", "detetive+deserto", "farao+deserto"] },
+    { "id": "estatua", "label": "Estátua", "icon": "🗿", "candidates": ["farao+museu", "farao+deserto", "dinossauro+museu"] }
+  ],
+  "solution": {
+    "mumia": "farao+noite",
+    "moldura": "pintor+museu",
+    "estrelas": "pintor+noite",
+    "pegadas": "detetive+deserto",
+    "roubo": "detetive+ouro",
+    "lanterna": "detetive+museu",
+    "meteoro": "dinossauro+noite",
+    "ambar": "pintor+ouro",
+    "escaravelho": "farao+ouro",
+    "miragem": "farao+deserto",
+    "estatua": "farao+museu"
+  }
+}

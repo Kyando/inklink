@@ -1,0 +1,25 @@
+{
+  "id": "consultorio",
+  "title": "O Consultório",
+  "subtitle": "Cada peça combina com a palavra da linha e a da coluna.",
+  "rows": [
+    { "id": "medico", "label": "Médico", "icon": "🩺" },
+    { "id": "cozinheiro", "label": "Cozinheiro", "icon": "🧑‍🍳" }
+  ],
+  "cols": [
+    { "id": "urso", "label": "Urso", "icon": "🐻" },
+    { "id": "mar", "label": "Mar", "icon": "🌊" }
+  ],
+  "clues": [
+    { "id": "veterinario", "label": "Veterinário", "icon": "🐾", "candidates": ["medico+urso"] },
+    { "id": "mel", "label": "Mel", "icon": "🍯", "candidates": ["cozinheiro+urso", "medico+urso"] },
+    { "id": "salva-vidas", "label": "Salva-vidas", "icon": "🛟", "candidates": ["medico+mar"] },
+    { "id": "camarao", "label": "Camarão", "icon": "🦐", "candidates": ["cozinheiro+mar"] }
+  ],
+  "solution": {
+    "veterinario": "medico+urso",
+    "mel": "cozinheiro+urso",
+    "salva-vidas": "medico+mar",
+    "camarao": "cozinheiro+mar"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "inklink",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A cozy word-association logic puzzle — find where each clue links two words.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "levels": "node scripts/levels-report.ts",
+    "levels:explore": "node scripts/explore-solutions.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.1"
+  }
+}

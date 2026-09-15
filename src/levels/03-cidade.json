@@ -1,0 +1,37 @@
+{
+  "id": "cidade",
+  "title": "Um Dia na Cidade",
+  "subtitle": "Quando uma peça só cabe num quadro, ela tira esse quadro das outras.",
+  "rows": [
+    { "id": "carteiro", "label": "Carteiro", "icon": "📮" },
+    { "id": "bombeiro", "label": "Bombeiro", "icon": "🧑‍🚒" },
+    { "id": "cozinheiro", "label": "Cozinheiro", "icon": "🧑‍🍳" }
+  ],
+  "cols": [
+    { "id": "cachorro", "label": "Cachorro", "icon": "🐕" },
+    { "id": "gato", "label": "Gato", "icon": "🐈" },
+    { "id": "arvore", "label": "Árvore", "icon": "🌳" }
+  ],
+  "clues": [
+    { "id": "mordida", "label": "Mordida", "icon": "🦷", "candidates": ["carteiro+cachorro", "carteiro+gato"] },
+    { "id": "caixa", "label": "Caixa", "icon": "📦", "candidates": ["carteiro+gato", "cozinheiro+gato"] },
+    { "id": "papel", "label": "Papel", "icon": "📜", "candidates": ["carteiro+arvore"] },
+    { "id": "dalmata", "label": "Dálmata", "icon": "🐶", "candidates": ["bombeiro+cachorro"] },
+    { "id": "escada", "label": "Escada", "icon": "🪜", "candidates": ["bombeiro+gato", "bombeiro+arvore"] },
+    { "id": "incendio", "label": "Incêndio", "icon": "🔥", "candidates": ["bombeiro+arvore"] },
+    { "id": "cachorro-quente", "label": "Cachorro-quente", "icon": "🌭", "candidates": ["cozinheiro+cachorro"] },
+    { "id": "sardinha", "label": "Sardinha", "icon": "🐟", "candidates": ["cozinheiro+gato"] },
+    { "id": "lenha", "label": "Lenha", "icon": "🪵", "candidates": ["cozinheiro+arvore", "bombeiro+arvore"] }
+  ],
+  "solution": {
+    "mordida": "carteiro+cachorro",
+    "caixa": "carteiro+gato",
+    "papel": "carteiro+arvore",
+    "dalmata": "bombeiro+cachorro",
+    "escada": "bombeiro+gato",
+    "incendio": "bombeiro+arvore",
+    "cachorro-quente": "cozinheiro+cachorro",
+    "sardinha": "cozinheiro+gato",
+    "lenha": "cozinheiro+arvore"
+  }
+}
