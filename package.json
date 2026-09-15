@@ -10,10 +10,16 @@
     "preview": "vite preview",
     "test": "vitest run",
     "levels": "node scripts/levels-report.ts",
-    "levels:explore": "node scripts/explore-solutions.ts"
+    "levels:explore": "node scripts/explore-solutions.ts",
+    "media": "vite build && node scripts/capture-media.ts",
+    "deploy": "node scripts/deploy-pages.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.0",
+    "@types/pngjs": "^6.0.5",
+    "gifenc": "^1.0.3",
+    "playwright-core": "^1.63.0",
+    "pngjs": "^7.0.0",
     "typescript": "^7.0.2",
     "vite": "^8.3.0",
     "vitest": "^5.0.1"

@@ -13,7 +13,7 @@
   ],
   "clues": [
     { "id": "bau", "label": "Baú", "icon": "🧰", "candidates": ["pirata+tesouro"] },
-    { "id": "xis", "label": "X marca o local", "icon": "❌", "candidates": ["pirata+mapa", "pirata+tesouro"] },
+    { "id": "xis", "label": "X no mapa", "icon": "❌", "candidates": ["pirata+mapa", "pirata+tesouro"] },
     { "id": "bussola", "label": "Bússola", "icon": "🧭", "candidates": ["pirata+estrela", "pirata+mapa"] },
     { "id": "meteorito", "label": "Meteorito", "icon": "☄️", "candidates": ["astronauta+tesouro", "astronauta+estrela"] },
     { "id": "satelite", "label": "Satélite", "icon": "🛰️", "candidates": ["astronauta+mapa", "astronauta+estrela"] },

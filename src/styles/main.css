@@ -497,6 +497,7 @@ button {
   border: 2.5px solid var(--stroke);
   border-radius: 14px;
   box-shadow: 0 3px 0 var(--stroke);
+  overflow: hidden;
   transform: rotate(var(--tilt, 0deg));
   transition: transform 0.2s cubic-bezier(0.3, 1.5, 0.5, 1), box-shadow 0.2s, background 0.2s;
 }
@@ -559,6 +560,17 @@ img.note {
   text-transform: uppercase;
   letter-spacing: 0.01em;
   overflow-wrap: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.piece-icon {
+  flex-shrink: 1;
+  min-height: 0;
 }
 
 /* Placed: the piece becomes the panel's illustration */
